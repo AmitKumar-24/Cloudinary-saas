@@ -1,13 +1,21 @@
 @import "tailwindcss";
-/* @plugin "daisyui"; */
-/* @plugin "daisyui" {
-  themes: light --default, dark --prefersdark;
-} */
 
-/* :root {
+/* @plugin "daisyui"; */
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*! DaisyUI themes can be handled here if needed */
+
+:root {
   --background: #ffffff;
   --foreground: #171717;
-} */
+}
 
 /* @theme inline {
   --color-background: var(--background);
@@ -16,22 +24,27 @@
   --font-mono: var(--font-geist-mono);
 } */
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-} */
+}
 
-/* body {
+body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-} */
+}
 
-/* @tailwind base;
+
+
+
+
+/* 
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -49,4 +62,4 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
